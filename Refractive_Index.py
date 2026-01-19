@@ -20,7 +20,7 @@ def pandw(wvl,wts):
     wp = Sulfuric acid weight percentage (%)
     returns real and imaginary parts of the refractive index
     """
-    pandw_table = '/Users/kalnajs/Documents/Python/Mie Scattering/Palmer&Williams/Palmer&Williams_0.36-7.2um.csv'
+    pandw_table = 'Palmer&Williams/Palmer&Williams_0.36-7.2um.csv'
     pandw = np.genfromtxt(pandw_table,comments='#', delimiter = ',' ) #read the csv file
     pandw_percentages = np.array([25.00,38.00,50.00,75.00,84.50,95.60]) #this is the header with weight percentages
     pandw_wavelengths =  np.flip(pandw[:,0]*1000.0)  #the first column is wavelengths, convert from um to nm
