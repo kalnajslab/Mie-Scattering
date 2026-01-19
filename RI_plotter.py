@@ -153,5 +153,3 @@ plt.plot(T,wtp,'k', label = '360nm')
 plt.xlim(185,210)
 plt.ylabel('Concnetration [wt%]')
 plt.xlabel('T [K]')
-
-plt.show()
